@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    <header>
+      <h1>Flix</h1>
+    </header>
+    <div class="content">
     <%= yield %>
+    </div>
+    <footer>
+      <p>
+        Copyright &copy; <%= Time.now.year %>
+        <%= link_to 'Hugo Lacerda','https://github.com/hugolacerdar' %>
+      </p>
+    </footer>
   </body>
 </html>
